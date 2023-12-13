@@ -1,3 +1,18 @@
+
+.App .sine-waves .react-p5-wrapper {
+  background-color: gray;
+}
+
+body html {
+  overflow: hidden;
+  background-color: gray;
+}
+
+.p5Canvas {
+  height: fit-content;
+  overflow: hidden;
+}
+
 .controls {
   position: fixed;
   margin-bottom: 20px;
@@ -9,6 +24,7 @@
   justify-content: center;
   align-items: center;
   height: 800px;
+  background-color: gray;
   }
   
 @media (max-width: 768px) {
