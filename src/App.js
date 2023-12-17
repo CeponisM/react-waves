@@ -54,12 +54,12 @@ function App() {
           <div key={index} className="controlsList">
             <label>
               Amplitude:
-              <input type="range" min="10" max="1000" value={wave.amplitude}
+              <input type="range" min="-1000" max="1000" value={wave.amplitude}
                 onChange={e => updateSineWave(index, 'amplitude', parseInt(e.target.value))} />
             </label>
             <label>
               Frequency:
-              <input type="range" min="0" max="100000" step="1" value={wave.frequency}
+              <input type="range" min="-10000" max="10000" step="0.01" value={wave.frequency}
                 onChange={e => updateSineWave(index, 'frequency', parseInt(e.target.value))} />
             </label>
             <label>
@@ -97,7 +97,7 @@ function App() {
             </button>
             <label>
               Rotation Speed:
-              <input type="range" min="-100" max="100" step="0.1" value={wave.rotationSpeed}
+              <input type="range" min="-1" max="1" step="0.001" value={wave.rotationSpeed}
                 onChange={e => updateSineWave(index, 'rotationSpeed', parseFloat(e.target.value))} />
             </label>
             <button onClick={() => updateSineWave(index, 'isRotating2', !wave.isRotating2)}>
